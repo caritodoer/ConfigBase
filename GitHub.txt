@@ -1,0 +1,45 @@
+## Pasos para inicializar Git
+
+posicionarse en la carpeta en la que voy a trabajar:
+
+git config --global user.email "caritodoer@gmail.com"
+git init
+git remote add origin https://github.com/caritodoer/rompecocos.git
+
+### Si el repositorio ya existe en git, para bajar el proyecto
+git clone https://github.com/caritodoer/rompecocos.git
+
+### Para saber el estado de los archivos en mi compu en relacion con GIT
+git status
+
+### Cada vez que quiero subir cambios:
+
+* para descargar actualizaciones y ver los conflictos de merge
+git pull origin master
+
+-- si hay errores de merge se genera en el archivo algo asi:
+
+>>> HEAD
+... (lo que yo modifique en mi PC)
+===
+... (lo que esta en la web)
+>>> FINAL
+
+esto es un conflicto y se soluciona eliminando ya sea lo que esta en el head o debajo.
+
+* para agregar modificaciones o archivos, arma el "paquete" que va a subir:
+git add .
+
+* para que agregue un comentario rel. con las modificaciones.
+git commit -m "comentario de modificaciones hechas"
+
+* para subir archivos
+git push origin master
+
+
+#############
+## ERRORES ##
+#############
+
+* fatal: remote origin already exists
+git remote set-url origin https://github.com/caritodoer/rompecocos.git
