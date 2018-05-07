@@ -14,7 +14,7 @@ EN TERMINAL>
 para ver si se instalo correctamente, y para ver la version>
 	pip3 -V
 Para que descargue correctamente otros paquetes, es bueno tenerlo actualizado:
-	pip3 install --upgrade pip
+	pip3 install --upgrade pip    --->>> ESTO EN KUBUNTU Y OTRAS DISTRIBUCIONES DA ERRORES! NO ACTUALIZAR!
 
 ###############################
 ## Para instalar django 1.10 ##
