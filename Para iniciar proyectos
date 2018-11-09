@@ -23,6 +23,12 @@ Una vez que tenemos pip3, podemos instalar Django:
 	pip3 install django==1.10
 Lo ponemos con == porque queremos descargar ESA version de Django en especifico.
 
+## Para instalar la ultima verion de django:
+	pip3 install Django
+
+## Para corroborar qué versión de Django se instaló:
+	python3 -m django --version
+
 ############################
 ## Para Instalar POSTGRES ##
 ############################
