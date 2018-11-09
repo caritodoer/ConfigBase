@@ -115,6 +115,35 @@ Si no estas logueado, se puede hacer con sudo:
 11. TERMINAL> python3 manage.py runserver (se sale con Ctrl+C)
 12. NAVEGADOR> localhost:8000/admin
 
+VISTAS
+13. dentro de la carpeta de la app, abrir views.py
+ejemplo de views simple:
+
+from django.http import HttpResponse
+def index(request):
+    return HttpResponse("Hello, world.")
+
+URLS
+14. dentro de la carpeta de la app, crear un archivo urls.py y añadir el siguiente codigo para vincular views con urls
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+]
+
+15. en el arhivo urls.py del proyecto, vincular URLs de aplicaciones con URL general del proyecto
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path('nombreApp/', include('nombreApp.urls')),
+    path('admin/', admin.site.urls),
+]
+
+para corroborar que funciona ir al navegador y colocar http://localhost:8000/nombreApp/ y se debería ver el texto «Hello, world.» que escribimos en views.py, en el views "index"
+
+
 
 
 #################################
