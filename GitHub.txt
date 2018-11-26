@@ -1,8 +1,18 @@
-## Pasos para inicializar Git
+GIT : Sistema de control de versiones (distribuido)
+!==
+GITHUB : plataforma de hosting de repositorios donde pueden ser compartidos
 
+Tres estados:
+1. working directory. Donde entrn lo archivos al inicio
+2. staging area. Area de preparacion del archivo antes de ser incluido
+3. git directory (repository). cuando se hace el Commit y se incluye al proyecto.
+
+
+## Pasos para inicializar Git
 posicionarse en la carpeta en la que voy a trabajar:
 
 git config --global user.email "caritodoer@gmail.com"
+git config --global user.name caritodoer
 git init
 git remote add origin https://github.com/caritodoer/rompecocos.git
 
