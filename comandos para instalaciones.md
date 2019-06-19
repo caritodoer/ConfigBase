@@ -252,19 +252,19 @@ para corroborar que funciona ir al navegador y colocar http://localhost:8000/nom
 
 # Otras librerias
 ## Para importaciones y exportaciones a excel:
-	libreria django-import-export
+#### libreria *django-import-export*
 ```
 pip3 install django-import-export
 ```
 http://django-import-export.readthedocs.io/en/latest/getting_started.html
 
 ## Para formularios
-	libreria crispy-forms
+#### libreria *crispy-forms*
 ```
 pip3 install --upgrade django-crispy-forms
 ```
 ## Para crear PDF:
-	libreria Reportlab
+#### libreria *Reportlab*
 ```
 pip3 install reportlab
 ```
