@@ -115,7 +115,7 @@ Esto instala postgresql y crea un usuario llamado postgres por defecto. Para ent
 sudo -u postgres psql
 ```
 
-### para setear la contraseña (o cambiarla despues en caso de olvido):
+### Para setear la contraseña (o cambiarla despues en caso de olvido):
 ```
 alter user postgres with password 'NuevaClave';
 ```
@@ -134,12 +134,12 @@ sudo pip3 install psycopg2
 ```
 Despues de esto hay que instalar el FrontEnd pgAdmin III, para trabajar ahi sin tener que hacerlo desde la consola.
 Al abrir pgAdmin, hacer clic en el dibujo del enchufe (Nueva Conexion).
-	* Name: MiConexion
-	* HOST: 127.0.0.1 (Si es BDD local. Si es BDD remota, pongo la IP de esa maquina remota)
-	* PORT: 5432 (ya esta determinado)
-	* Servicio: (Queda vacio.)
-	* Username: postgres
-	* Password: postgres (lo que estabeci cuando lo instale)
+* Name: MiConexion
+* HOST: 127.0.0.1 (Si es BDD local. Si es BDD remota, pongo la IP de esa maquina remota)
+* PORT: 5432 (ya esta determinado)
+* Servicio: (Queda vacio.)
+* Username: postgres
+* Password: postgres (lo que estabeci cuando lo instale)
 
 ### Otra forma de entrar a postgres es:
 ```
