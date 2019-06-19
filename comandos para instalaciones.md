@@ -15,11 +15,11 @@ Viene instalado por defecto. Para corroborar la version, en la terminal escribir
 
 ## Para instalar pip3
 PIP 3 nos sirve para descargar programas relacionados con Python3, para Python2 se necesita 'pip'
-EN TERMINAL>
+EN TERMINAL:
 ```
 	sudo apt install python3-pip
 ```
-para ver si se instalo correctamente, y para ver la version>
+para ver si se instalo correctamente, y para ver la version:
 ```
 	pip3 -V
 ```
@@ -58,7 +58,7 @@ $ /path/to/your/virtual/env/
 $ source bin/activate
 ```
 
-## Para Instañar GIT
+## Para Instalar GIT
 ```
 sudo apt install git
 ```
@@ -94,7 +94,7 @@ Una vez que tenemos pip3, podemos instalar Django:
 ```
 Lo ponemos con == porque queremos descargar ESA version de Django en especifico.
 
-### Para instalar la **ultima verion** de django:
+### Para instalar la **ultima version** de django:
 ```
 	pip3 install Django
 ```
@@ -106,24 +106,40 @@ Lo ponemos con == porque queremos descargar ESA version de Django en especifico.
 ## Para Instalar PostgreSQL
 
 EN TERMINAL	
-1.    sudo apt-get update
-2.    sudo apt-get install postgresql postgresql-contrib
-3. esto instala postgresql y crea un usuario llamado postgres por defecto. Para entrar a esta cuenta escribir:
-    sudo -u postgres psql
-4. para setear la contraseña (o cambiarla despues en caso de olvido):
-	alter user postgres with password 'NuevaClave';
-5. \q --> para grabar y salir
-6. exit --> para salir a la consola
-7. sudo pip3 install psycopg2 --> biblioteca de python para conectarse a postgres
+```
+sudo apt-get update
+sudo apt-get install postgresql postgresql-contrib
+```
+Esto instala postgresql y crea un usuario llamado postgres por defecto. Para entrar a esta cuenta escribir:
+```
+sudo -u postgres psql
+```
 
---> Despues de esto hay que instalar el FrontEnd pgAdmin III, para trabajar ahi sin tener que hacerlo desde la consola.
-	Al abrir pgAdmin, hacer clic en el dibujo del enchufe (Nueva Conexion).
-	Name: MiConexion
-	HOST: 127.0.0.1 (Si es BDD local. Si es BDD remota, pongo la IP de esa maquina remota)
-	PORT: 5432 (ya esta determinado)
-	Servicio: (Queda vacio.)
-	Username: postgres
-	Password: postgres (lo que estabeci cuando lo instale)
+### para setear la contraseña (o cambiarla despues en caso de olvido):
+```
+alter user postgres with password 'NuevaClave';
+```
+para grabar y salir:
+```
+\q 
+```
+para salir a la consola:
+```
+exit
+``` 
+
+### Instalar biblioteca de python para conectarse a postgres
+```
+sudo pip3 install psycopg2
+```
+Despues de esto hay que instalar el FrontEnd pgAdmin III, para trabajar ahi sin tener que hacerlo desde la consola.
+Al abrir pgAdmin, hacer clic en el dibujo del enchufe (Nueva Conexion).
+	* Name: MiConexion
+	* HOST: 127.0.0.1 (Si es BDD local. Si es BDD remota, pongo la IP de esa maquina remota)
+	* PORT: 5432 (ya esta determinado)
+	* Servicio: (Queda vacio.)
+	* Username: postgres
+	* Password: postgres (lo que estabeci cuando lo instale)
 
 ### Otra forma de entrar a postgres es:
 ```
