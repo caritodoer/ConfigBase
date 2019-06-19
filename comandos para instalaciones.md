@@ -57,10 +57,24 @@ To reactivate:
 $ /path/to/your/virtual/env/
 $ source bin/activate
 ```
+
 ## Para Instañar GIT
 ```
 sudo apt install git
 ```
+
+### Si ya existe el repositorio:
+```
+git clone https://github.com/caritodoer/nombreRepositorio.git
+```
+Esto crea una carpeta con el nombre del repositorio donde se descarga el mismo.
+Despues de modificar archivos, pueden subirse de esta manera:
+```
+git add .
+git commit -m "Algun comentario sobre las modificaciones"
+git push
+```
+
 ## Instalar Django
 ### Para Instalar **Django 2.0.7** & Start New project
 ```
